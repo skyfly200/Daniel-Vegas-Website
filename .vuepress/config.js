@@ -1,10 +1,10 @@
 module.exports = {
-    title: "CMS Template",
+    title: "Daniel Vega",
     locales: {
         '/': {
             lang: 'en-EN',
-            title: 'CMS Template',
-            description: "VuePress NetlifyCMS Website"
+            title: 'Daniel Vega',
+            description: "Daniel Vega's Profesional Website"
         }
     },
     head: [
@@ -37,7 +37,7 @@ module.exports = {
     host: 'localhost',
     themeConfig: {
         search: false,
-        repo: 'skyfly200/CMS-Template',
+        repo: 'skyfly200/Daniel-Vegas-Website',
         lastUpdated: 'Last Updated', // string | boolean
         nav: [
           {

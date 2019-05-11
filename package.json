@@ -1,8 +1,8 @@
 {
   "name": "vuepress",
   "version": "1.0.0",
-  "repository": "https://github.com/skyfly200/CMS-Template",
-  "description": "Starter template for a VuePress site",
+  "repository": "https://github.com/skyfly200/Daniel-Vegas-Website",
+  "description": "Daniel Vega Profesional Website",
   "author": "Skyler Fly-Wilson",
   "license": "MIT",
   "scripts": {
