@@ -1,7 +1,7 @@
 ---
-pageClass: "contact"
-title: "Contact"
-contactBlurb: "Reach out!"
-email: example@example.com
+title: Contact
+menuIcon: ' '
 phone: 720-555-7536
+email: daniel@vegarevolutionmusic.com
 ---
+.
