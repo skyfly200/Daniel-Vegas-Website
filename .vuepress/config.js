@@ -56,6 +56,11 @@ module.exports = {
                 icon: 'music_note'
             },
             {
+                text: 'List of Works',
+                link: '/list.html',
+                icon: 'list'
+            },
+            {
                 text: 'Events',
                 link: '/events/',
                 icon: 'calendar_today'
