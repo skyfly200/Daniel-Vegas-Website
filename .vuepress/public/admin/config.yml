@@ -16,34 +16,37 @@ collections:
         file: "README.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Menu Icon", name: "menuIcon", widget: "string"}
           - {label: "Parallax Image", name: "parallaxImage", widget: "file"}
           - {label: "Parallax Header", name: "parallaxHeader", widget: "string"}
-          - {label: "Parallax Content", name: "parallaxContent", widget: "text"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Parallax Content", name: "parallaxContent", widget: "text", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
       - label: "Bio"
         name: "bio"
         file: "bio.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Menu Icon", name: "menuIcon", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
+      - label: "List of Works"
+        name: "list"
+        file: "list.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
       - label: "Contact"
         name: "contact"
         file: "contact.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Menu Icon", name: "menuIcon", widget: "string"}
-          - {label: "Phone", name: "phone", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Phone", name: "phone", widget: "string", required: false}
+          - {label: "Email", name: "email", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "sample"
     label: "Samples"
     folder: "sample"
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "works"
     label: "Works"
     folder: "works"
@@ -70,9 +73,9 @@ collections:
       - {label: "Group Url", name: "groupUrl", widget: "string", required: false}
       - {label: "Venue", name: "venue", widget: "string", required: false}
       - {label: "Venue Url", name: "venueUrl", widget: "string", required: false}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Date and Time", name: "datetime", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Location", name: "location", widget: "string", required: false}
+      - {label: "Date and Time", name: "datetime", widget: "datetime", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "posts"
     label: "Blog Posts"
     folder: "posts"
@@ -82,4 +85,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
