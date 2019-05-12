@@ -5,7 +5,7 @@ backend:
 
 public_folder: "/assets"
 media_folder: ".vuepress/public/assets"
-display_url: https://daniel-vega.netlify.com/
+display_url: http://vegarevolutionmusic.com/
 
 collections:
   - name: "pages"
