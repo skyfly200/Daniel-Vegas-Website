@@ -18,7 +18,7 @@
                 <template v-for="i in $page.frontmatter.list">
                   <li :key="i.title">
                     <h3>
-                      <router-link v-if="i.type === 'work'" :to="i.path">{{ i.work }}</router-link>
+                      <router-link v-if="i.type === 'work'" :to="getPath(i.work)">{{ i.work }}</router-link>
                       <a v-if="i.type === 'external'" :href="i.url">{{ i.title }}</a>
                       <template v-else>{{ i.title }}</template>
                     </h3>
@@ -38,6 +38,11 @@ import Nav from "./components/Nav"
 export default {
   components: {
     Nav
+  },
+  methods: {
+    getPath: function(title) {
+      return this.$site.pages.find(p => p.title === title).path;
+    }
   }
 };
 </script>
