@@ -2,6 +2,7 @@
   <v-app dark>
     <Home v-if="isHome"/>
     <Contact v-else-if="isContact"/>
+    <List v-else-if="isList" />
     <Listen v-else-if="isListen" />
     <WorkPage v-else-if="isWork" />
     <Events v-else-if="isEvents" />
@@ -15,6 +16,7 @@
 <script>
   import Home from './Home';
   import Contact from './Contact';
+  import List from './List';
   import Listen from './Listen';
   import WorkPage from './WorkPage';
   import Events from './Events';
@@ -27,6 +29,7 @@
       components: {
         Home,
         Contact,
+        List,
         Listen,
         WorkPage,
         Events,
@@ -44,6 +47,10 @@
           isContact() {
             const {path} = this.$page;
             return path === "/contact.html";
+          },
+          isList() {
+            const {path} = this.$page;
+            return path === "/list.html";
           },
           isListen() {
             const {path} = this.$page;
