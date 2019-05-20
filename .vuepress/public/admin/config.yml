@@ -46,6 +46,59 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string", hint: "Title used for page heading and browser tab title"}
           - {label: "Body", name: "body", widget: "markdown", required: false}
+          - label: "List of Works"
+            name: "list"
+            widget: 'list'
+            hint: "Select works to list. May use links to works, external links or no link"
+            types:
+              - label: "No Link"
+                name: "none"
+                widget: 'object'
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    hint: "Title of item in list"
+                  - label: "Description"
+                    name: "description"
+                    widget: "text"
+                    required: false
+                    hint: "Description of item in list"
+              - label: "Work"
+                name: "work"
+                widget: 'object'
+                fields:
+                  - label: "Work"
+                    name: "work"
+                    widget: "relation"
+                    collection: "works"
+                    required: false
+                    searchFields: ["title", "created", "body"]
+                    valueField: "title"
+                    displayFields: ["title"]
+                    hint: "Select a work from the listen section to refrence"
+                  - label: "Description"
+                    name: "description"
+                    widget: "text"
+                    required: false
+                    hint: "Description of item in list"
+              - label: "External Link"
+                name: "external"
+                widget: 'object'
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    hint: "Title of item in list"
+                  - label: "External Link URL"
+                    name: "url"
+                    widget: "string"
+                    hint: ""
+                  - label: "Description"
+                    name: "description"
+                    widget: "text"
+                    required: false
+                    hint: "Description of item in list"
   - name: "sample"
     label: "Samples"
     folder: "sample"
