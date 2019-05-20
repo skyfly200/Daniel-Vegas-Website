@@ -1,6 +1,6 @@
 <template>
   <v-footer app absolute dark>
-    <span>&copy; Skyler Fly-Wilson {{ copyrightYear }}</span>
+    <span>&copy; {{ $site.title }} {{ copyrightYear }}</span>
   </v-footer>
 </template>
 <script>
