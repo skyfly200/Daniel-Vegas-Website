@@ -9,9 +9,9 @@
         <v-layout class="pa-4">
           <v-flex xs12 md10 offset-md1>
             <v-card class="contact-info pa-4 ma-4">
-              <h1> {{ $page.frontmatter.contactBlurb }} </h1>
-              <a :href="'tel:' + $page.frontmatter.phone"><h2> {{ $page.frontmatter.phone }} </h2></a>
-              <a :href="'mailto:' + $page.frontmatter.email"><h2> {{ $page.frontmatter.email }} </h2></a>
+              <h1>{{ $page.frontmatter.contactBlurb }}</h1>
+              <h2>Phone: <a :href="'tel:' + $page.frontmatter.phone">{{ $page.frontmatter.phone }}</a></h2>
+              <h2>Email: <a :href="'mailto:' + $page.frontmatter.email">{{ $page.frontmatter.email }}</a></h2>
               <Content />
             </v-card>
             <v-card class="pa-4 ma-4">
@@ -117,6 +117,9 @@ export default {
 <style>
   .card-header {
     text-align: center;
+  }
+  a {
+    text-decoration: none;
   }
   @media( max-width: 425px ) {
     .contact-info {
