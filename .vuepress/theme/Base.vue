@@ -7,7 +7,9 @@
           <h1>{{ $page.title }}</h1>
         </v-layout>
         <v-layout class="pa-4">
-          <Content />
+          <v-flex xs12 md10 offset-md1>
+            <Content />
+          </v-flex>
         </v-layout>
       </v-container>
     </v-content>

@@ -6,47 +6,51 @@
         <v-layout class="pa-4 page-title">
           <h1>{{ $page.title }}</h1>
         </v-layout>
-        <v-card class="contact-info pa-4 ma-4">
-          <h1> {{ $page.frontmatter.contactBlurb }} </h1>
-          <a :href="'tel:' + $page.frontmatter.phone"><h2> {{ $page.frontmatter.phone }} </h2></a>
-          <a :href="'mailto:' + $page.frontmatter.email"><h2> {{ $page.frontmatter.email }} </h2></a>
-          <Content />
-        </v-card>
-        <v-card class="pa-4 ma-4">
-          <h2>Get in touch!</h2>
-          <v-form ref="form" v-model="valid" @submit.stop="submit" lazy-validation>
-            <v-text-field
-              v-model="name"
-              :rules="nameRules"
-              label="Name"
-              required
-            ></v-text-field>
-            <v-text-field
-              v-model="email"
-              :rules="emailRules"
-              label="E-mail"
-              required
-            ></v-text-field>
-            <v-text-field
-              v-model="subject"
-              :rules="subjectRules"
-              label="Subject"
-            ></v-text-field>
-            <v-textarea
-              v-model="message"
-              :rules="messageRules"
-              label="Message"
-              auto-grow
-              required
-            ></v-textarea>
-            <v-btn
-              :disabled="!valid"
-              @click="submit" >
-            submit</v-btn>
-            <v-btn @click="clear">clear</v-btn>
-            <v-alert v-if="alert" :value="alert" :type="alertType"> {{ alert }} </v-alert>
-          </v-form>
-        </v-card>
+        <v-layout class="pa-4">
+          <v-flex xs12 md10 offset-md1>
+            <v-card class="contact-info pa-4 ma-4">
+              <h1> {{ $page.frontmatter.contactBlurb }} </h1>
+              <a :href="'tel:' + $page.frontmatter.phone"><h2> {{ $page.frontmatter.phone }} </h2></a>
+              <a :href="'mailto:' + $page.frontmatter.email"><h2> {{ $page.frontmatter.email }} </h2></a>
+              <Content />
+            </v-card>
+            <v-card class="pa-4 ma-4">
+              <h2>Get in touch!</h2>
+              <v-form ref="form" v-model="valid" @submit.stop="submit" lazy-validation>
+                <v-text-field
+                  v-model="name"
+                  :rules="nameRules"
+                  label="Name"
+                  required
+                ></v-text-field>
+                <v-text-field
+                  v-model="email"
+                  :rules="emailRules"
+                  label="E-mail"
+                  required
+                ></v-text-field>
+                <v-text-field
+                  v-model="subject"
+                  :rules="subjectRules"
+                  label="Subject"
+                ></v-text-field>
+                <v-textarea
+                  v-model="message"
+                  :rules="messageRules"
+                  label="Message"
+                  auto-grow
+                  required
+                ></v-textarea>
+                <v-btn
+                  :disabled="!valid"
+                  @click="submit" >
+                submit</v-btn>
+                <v-btn @click="clear">clear</v-btn>
+                <v-alert v-if="alert" :value="alert" :type="alertType"> {{ alert }} </v-alert>
+              </v-form>
+            </v-card>
+          </v-flex>
+        </v-layout>
       </v-container>
     </v-content>
   </div>
