@@ -77,6 +77,10 @@ collections:
                     valueField: "title"
                     displayFields: ["title"]
                     hint: "Select a work from the listen section to refrence"
+                  - label: "Path"
+                    name: "path"
+                    widget: "string"
+                    hint: "Path to the item on your site"
                   - label: "Description"
                     name: "description"
                     widget: "text"

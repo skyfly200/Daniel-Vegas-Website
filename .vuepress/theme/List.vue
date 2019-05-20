@@ -18,8 +18,8 @@
                 <template v-for="i in $page.frontmatter.list">
                   <li :key="i.title">
                     <h3>
-                      <a v-if="i.type === 'work'" to="#">{{ i.work }}</a>
-                      <a v-if="i.type === 'external'" href="i.url">{{ i.title }}</a>
+                      <router-link v-if="i.type === 'work'" :to="i.path">{{ i.work }}</router-link>
+                      <a v-if="i.type === 'external'" :href="i.url">{{ i.title }}</a>
                       <template v-else>{{ i.title }}</template>
                     </h3>
                     <p v-if="i.description">{{ i.description }}</p>
