@@ -72,7 +72,6 @@ collections:
                     name: "work"
                     widget: "relation"
                     collection: "works"
-                    required: false
                     searchFields: ["title", "created", "body"]
                     valueField: "title"
                     displayFields: ["title"]
