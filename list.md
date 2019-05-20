@@ -1,17 +1,19 @@
 ---
-pageClass: "list"
-title: "List of Works"
+title: List of Works
 list:
-  - title: No Link
+  - description: you can an item with no link
+    title: No Link
     type: none
-    description: you can an item with no link
-  - type: work
+  - description: you can have an item with a link to a work on your site
+    type: work
     work: Just a Stream
-    description: you can have an item with a link to a work on your site
-  - title: External Link
+  - description: you can have an item with an external link
+    title: External Link
     type: external
-    url: http://206.189.237.110:8000/KWHR
-    description: you can have an item with an external link
+    url: 'http://206.189.237.110:8000/KWHR'
+  - description: ''
+    type: work
+    work: The Meat Grinder
 ---
 
 Here is a list of works
