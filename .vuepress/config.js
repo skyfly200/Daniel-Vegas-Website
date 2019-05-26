@@ -1,5 +1,6 @@
 module.exports = {
     title: "Daniel Vega",
+    ga: 'UA-140808985-1',
     locales: {
         '/': {
             lang: 'en-EN',
@@ -23,7 +24,7 @@ module.exports = {
     plugins: [
       [
         '@vuepress/google-analytics',
-        { ga: '' }
+            { ga: 'UA-140808985-1' }
       ]
     ],
     configureWebpack: (config, isServer) => {
