@@ -1,6 +1,6 @@
 ---
 title: Home
-parallaxImage: /assets/FDGD2015.jpg
+parallaxImage: /assets/daniel-cover-photo-2-.jpg
 parallaxHeader: Daniel Vega
 parallaxContent: Composer & Saxophonist
 ---
