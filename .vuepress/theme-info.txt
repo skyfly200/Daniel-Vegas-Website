@@ -1,0 +1,13 @@
+{
+    primary: #3f51b5,
+    secondary: #e91e63,
+    accent: #4caf50,
+    error: #f44336,
+    warning: #ffeb3b,
+    info: #8bc34a,
+    success: #03a9f4
+}
+
+https://fonts.google.com/specimen/Playfair+Display
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+font-family: 'Playfair Display', serif;
