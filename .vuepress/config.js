@@ -9,7 +9,7 @@ module.exports = {
         }
     },
     head: [
-        ['link', { rel: 'stylesheet', href: `https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css` }],
+        ['link', { rel: 'stylesheet', href: `https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.min.css` }],
         ['link', { rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons` }],
         ['link', { rel: 'icon', href: `/logo.png` }],
         ['link', { rel: 'manifest', href: '/manifest.json' }],
